@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <title>Sømjo</title>
+
+   <link href="./style.css" rel="stylesheet">
+
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="animated-background">
+         <div class="container">
+            <h1 class="textcenter"> Bank Card</h1>
+            <div class="card-wrapper">
+               <div class="card-back">
+                  <div class="card-back-line" id="code"></div>
+                  <input type="text" maxlength=3 id="cvv"  placeholder="cvv" />
+               </div>
+               <div class="card-front"  id="front" >
+                  <img src="./images/11.jpg"  alt="" class="card-image">
+                  <img src="./images/Mastercard-logo.svg" alt="" class="card-logo">
+                  <input type="text" id="card-number" maxlength=16 placeholder="0000 0000 0000 0000">
+                  <input type="text" maxlength=2 id="card-to-month" placeholder="MM">
+                  <input type="text" maxlength=4 id="card-to-year" placeholder="YYYY">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./js.js"></script>
+   <script src="./node_modules/card-info/dist/card-info.min.js"></script>
+   <script src="./node_modules/card-info/dist/card-info.js"></script>
+   <script src="./node_modules/card-info/dist/banks-and-prefixes/ru.min.js"></script>
+   </script>
+</body>
